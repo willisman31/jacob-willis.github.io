@@ -1,2 +1,0 @@
-# JACOB-WILLIS.COM
-
