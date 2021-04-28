@@ -1,1 +1,2 @@
-ErrorDocument 404 jacob-willis.com/not-found-page.html
+ErrorDocument 404 http://jacob-willis.com/404.html
+ErrorDocument 500 http://jacob-willis.com/500.html
