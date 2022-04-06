@@ -1,3 +1,3 @@
 # willisman31.github.io
 
-Website under construction
+Personal website to introduce myself and offer some learning materials based on my own experience.
