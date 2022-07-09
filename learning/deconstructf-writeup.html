@@ -1,36 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeconstruCTF Writeup</title>
-    <style>
-        body {
-            text-align: center;
-            padding-left: 25%;
-            padding-right: 25%;
-        }
-        p {
-            text-align: left;
-        }
-        .foot, .nav{
-            text-align: center;
-        }
-    </style>
-    <link rel="apple-touch-icon" sizes="180x180" href="/style/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/style/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/style/favicon-16x16.png">
-    <link rel="manifest" href="/style/site.webmanifest">
-</head>
+	<head>
+		<meta id="head" />
+		<script src="./assets/jquery-3.6.0.min.js"></script> 
+		<script>
+    		$(function(){
+				$("#head").load("./inc/head.html");
+				$("#nav").load("./inc/nav.html");
+				$("#footer").load("./inc/footer.html");
+    		});
+    	</script>
+	</head>
 
 
 <body>
-    <header>
-        <h1><a href="../index.html">JACOB-WILLIS.COM</a></h1>
-    </header>
-    <p class="nav"><a href="../about.html">ABOUT</a> | <a href="../learning.html">LEARNING</a> | <a href="../notes.html">NOTES</a> | <a href="../reading.html">READING LIST</a></p>
-    <p><br><br></p>
-    <h2>DeconstruCTF Writeup</h2>
+    <div id="nav"> </div>
+	<h2>DeconstruCTF Writeup</h2>
     <h3><strong>Intro</strong></h3>
     <p>This past Friday and Saturday was Google’s DesconstruCTF, which is a capture the flag competition for teams and individuals around the world; it included challenges about web application exploitation, cryptography, OSINT, and more.  This was my first timed CTF so I wasn’t too worried about completing a ton of challenges, I really just wanted to get in and see what I could do.  In the end I wound up completing just one challenge, but I got pretty far in another.  I’ll start by going over how I was able to complete that challenge, before I move on to where I struggled in the other challenges, and finish up by talking about my next steps.</p>
     <br />
@@ -51,15 +36,7 @@
     <br />
     <h3>Next Steps</h3>
     <p>Most of the knowledge I leveraged for this CTF came from completing rooms on TryHackMe, so I plan to return to THM and keep solving rooms.  I also looked into a couple of the cryptography challenges and was completely overwhelmed, it’s clear that I need to do a lot more research before I’m able to even start on those.  </p>
-    <footer>
-    <h3>Contact Me</h3>
-    <p class="foot">
-        <a href="mailto:jacob@jacob-willis.com">Email</a> | 
-        <a href="https://github.com/willisman31">GitHub</a> |
-        <a href="https://www.linkedin.com/in/jacobwillis22/">LinkedIn</a> |
-        <a href="https://twitter.com/jwillis414141">Twitter</a>
-    </p>
-</footer>
+    <div id="footer"> </div>
 </body>
 
 
