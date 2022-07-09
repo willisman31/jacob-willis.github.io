@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!--#include file="./inc/head.html"-->
+	<script src="./assets/jquery.js"></script> 
+    	<script src="./assets/mappings.js"></script>
+    		$(function(){
+      			$("#head").load("./inc/head.html");
+			$("#nav").load("./inc/nav.html");
+			$("#footer).load("./inc/footer.html");
+    		});
+    	</script>
+	<div id="head"> </div>
 	<body>
-		<iframe src="inc/nav.hmtl"> </iframe>
+		<div id="nav"> </div>
 		<p>Welcome to my personal website!  It's a little bare for now, but there's more coming; check out some of the articles in the <a href="https://jacob-willis.com/learning.html">learning</a> section!</p>
-		<iframe src="inc/footer.html"> </iframe>
+		<div id="footer"> </div>
 	</body>
 </html>
