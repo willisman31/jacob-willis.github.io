@@ -1,34 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes</title>
-    <style>
-        body {
-            text-align: center;
-        }
-        ul {
-            text-align: left;
-            padding-left: 25%;
-            padding-right: 25%;
-        }
-    </style>
-    <link rel="apple-touch-icon" sizes="180x180" href="/style/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/style/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/style/favicon-16x16.png">
-    <link rel="manifest" href="/style/site.webmanifest">
-</head>
-
-
+	<head>
+		<div id="head"> </div>
+		<script src="./assets/jquery-3.6.0.min.js"></script> 
+		<script>
+    		$(function(){
+				$("#head").load("./inc/head.html");
+				$("#nav").load("./inc/nav.html");
+				$("#footer").load("./inc/footer.html");
+    		});
+    	</script>
+	</head>
 <body>
-    <header>
-        <h1><a href="index.html">JACOB-WILLIS.COM</a></h1>
-    </header>
-    <p><a href="about.html">ABOUT</a> | <a href="learning.html">LEARNING</a> | <a href="notes.html">NOTES</a> | <a href="reading.html">READING LIST</a></p>
-    <p><br><br></p>
-    <h2>Notes</h2>
-
+    <div id="nav"> </div>
+    <h2>Note
     <h3>Java</h3>
     <p>Introduction to Java: <a href="https://drive.google.com/drive/folders/1NmYovTg9-3hlnc-21xyd8RvMz_8RHoD5?usp=sharing">Ch 1-15 Notes</a></p>
     <ul>
@@ -37,17 +22,6 @@
         <li><a href="https://drive.google.com/file/d/1FWUTT4x8BI-v0_SIf50HHNvyKdPw1gYq/view">Java: The Complete Reference</a> By Herbert Schildt</li>
         <li><a href="https://www.coursera.org/learn/exploiting-securing-vulnerabilities-java-applications">Exploiting and Securing Java Vulnerabilities</a></li>
     </ul>
-
-<footer>
-    <h3>Contact Me</h3>
-    <p>
-        <a href="mailto:jacob@jacob-willis.com">Email</a> | 
-        <a href="https://github.com/willisman31">GitHub</a> |
-        <a href="https://www.linkedin.com/in/jacobwillis22/">LinkedIn</a> |
-        <a href="https://twitter.com/jwillis414141">Twitter</a>
-    </p>
-</footer>
+	<div id="footer"> </div>
 </body>
-
-
 </html>

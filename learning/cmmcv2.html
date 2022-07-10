@@ -1,35 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob-Willis.com</title>
-    <style>
-        body {
-            text-align: center;
-            padding-left: 25%;
-            padding-right: 25%;
-        }
-        p {
-            text-align: left;
-        }
-        .foot, .nav{
-            text-align: center;
-        }
-    </style>
-    <link rel="apple-touch-icon" sizes="180x180" href="/style/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/style/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/style/favicon-16x16.png">
-    <link rel="manifest" href="/style/site.webmanifest">
-</head>
+		<div id="head"> </div>
+		<script src="./assets/jquery-3.6.0.min.js"></script> 
+		<script>
+    		$(function(){
+				$("#head").load("./inc/head.html");
+				$("#nav").load("./inc/nav.html");
+				$("#footer").load("./inc/footer.html");
+    		});
+    	</script>
+	</head>
 
 
 <body>
-    <header>
-        <h1><a href="../index.html">JACOB-WILLIS.COM</a></h1>
-    </header>
-    <p class="nav"><a href="../about.html">ABOUT</a> | <a href="../learning.html">LEARNING</a> | <a href="../notes.html">NOTES</a> | <a href="../reading.html">READING LIST</a></p>
-    <p><br><br></p>
+    <div id="nav"> </div>
     <h2>CMMC version 2</h2>
     <h3>Intro</h3>
     <p>The Cybersecurity Maturity Model Certification (CMMC) is the latest iteration of initiatives created by the Department of Defense (DoD) to try to control the release and flow of controlled unclassified information (CUI) in non-federal systems.  Basically, the CMMC is a DoD regulation which specifies how federal contractors should be handling sensitive information in their own systems.  The CMMC is instantiated by Defense Federal Acquisition Regulation Supplement (DFARS) 252.204-7021 and is intended to replace the patchwork of existing cybersecurity regulations currently in place which have proven largely ineffective.  This new regulation is expected to be implemented in all federal contracts beginning as soon as the final rule is released sometime in the next eight to twenty-three months.  The CMMC, in its latest version, is broken down into three distinct levels of increasing protections; level one declares the protections that must be put in place for federal contract information (FCI); level two mandates protections for CUI- and is the central focus of this article; and level three specifies cybersecurity protections for secret and top secret materials.  The CMMC is purely focused on cybersecurity protections of this information and is not the only relevant regulation for federal contracting materials- those regulations are outside the scope of this article.<br></p>
@@ -69,15 +54,7 @@
       <li>https://it-aac.org/?mdocs-file=1174</li>
       <li>https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/522022M.pdf</li>
     </ul>
-<footer>
-    <h3>Contact Me</h3>
-    <p class="foot">
-        <a href="mailto:jacob@jacob-willis.com">Email</a> |
-        <a href="https://github.com/willisman31">GitHub</a> |
-        <a href="https://www.linkedin.com/in/jacobwillis22/">LinkedIn</a> |
-        <a href="https://twitter.com/jwillis414141">Twitter</a>
-    </p>
-</footer>
+<div id="footer"> </div>
 </body>
 
 

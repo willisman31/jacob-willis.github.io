@@ -1,35 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cloud</title>
-    <style>
-        body {
-            text-align: center;
-            padding-left: 25%;
-            padding-right: 25%;
-        }
-        p {
-            text-align: left;
-        }
-        .foot, .nav{
-            text-align: center;
-        }
-    </style>
-    <link rel="apple-touch-icon" sizes="180x180" href="/style/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/style/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/style/favicon-16x16.png">
-    <link rel="manifest" href="/style/site.webmanifest">
-</head>
+		<div id="head"> </div>
+		<script src="./assets/jquery-3.6.0.min.js"></script> 
+		<script>
+    		$(function(){
+				$("#head").load("./inc/head.html");
+				$("#nav").load("./inc/nav.html");
+				$("#footer").load("./inc/footer.html");
+    		});
+    	</script>
+	</head>
 
 
 <body>
-    <header>
-        <h1><a href="../index.html">JACOB-WILLIS.COM</a></h1>
-    </header>
-    <p class="nav"><a href="../about.html">ABOUT</a> | <a href="../learning.html">LEARNING</a> | <a href="../notes.html">NOTES</a> | <a href="../reading.html">READING LIST</a></p>
-    <p><br><br></p>
+	<div id="nav"> </div>
     <h2>The Cloud</h2>
     <p>What is the cloud?  The cloud is just a rented computer; the relationship which most people have with the cloud is as a method for storing their photos, but the reality is that the cloud runs most of their favorite sites and applications.  </p>
     <p>The cloud is characterized as scalable and elastic.  This means that more space on the computer can be given to users as they need it (scaling) and they won’t be charged for space or time on the computer that they don’t use (elasticity).  This principle is much more important when the cloud is used to host websites; sites do not have uniform traffic patterns- the number of people visiting the site will change from hour to hour.  The cloud is very useful for these sites, because they won’t need to pay for the servers that are used during peak hours during low volume hours.  One might argue that the cloud is not entirely elastic, because consumers often have to pay for tiers of usage; however, this would be an inaccurate assertion, because these tiers can be upgraded or downgraded as needed.  Widely-used, consumer-oriented cloud services may not be perfectly elastic, but they are still elastic. </p>
@@ -37,15 +22,7 @@
     <p>What are the different kinds of cloud services?  There are three well-recognized services offered by the cloud: infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS).  Users are likely most familiar with SaaS- these are services like Gmail and LinkedIn.  SaaS applications are just that- apps that are run in the cloud and are served to users as polished products.  PaaS includes services like GitHub Pages and Salesforce; these are services that offer the pre-made tools to build your own applications.  The last major type is IaaS which includes services like Amazon’s EC2 or Microsoft’s Azure VMs.  These are servers provisioned with only the operating systems installed- it’s up to the user to leverage the server how they want.</p>
     <p>What is the hybrid cloud?  This is just a mix of the public and private cloud.  The public cloud covers all public-facing applications we have covered; the private cloud is an internal service that is used only by employees.  This type of setup is common when organizations use the cloud for both a public service and a secret or secure project- lots of government defense contractors will skew towards this model.</p>
     <p>What about security?  Cloud service providers (CSPs) get a bad rap for offering poor security, but the reality is quite far from rumor.  Data centers owned by big cloud providers are among the most secure places in the world; from a physical standpoint, CSPs are better than buying your own hardware.  In terms of virtual security, that is the role of the end user.  If you leave your instance (rented server) unprotected, there isn’t anything the CSP will do for you depending on your service level.</p>
-<footer>
-    <h3>Contact Me</h3>
-    <p class="foot">
-        <a href="mailto:jacob@jacob-willis.com">Email</a> | 
-        <a href="https://github.com/willisman31">GitHub</a> |
-        <a href="https://www.linkedin.com/in/jacobwillis22/">LinkedIn</a> |
-        <a href="https://twitter.com/jwillis414141">Twitter</a>
-    </p>
-</footer>
+	<div id="footer"> </div>
 </body>
 
 

@@ -1,42 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning</title>
-    <style>
-        body {
-            text-align: center;
-        }
-    </style>
-    <link rel="apple-touch-icon" sizes="180x180" href="/style/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/style/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/style/favicon-16x16.png">
-    <link rel="manifest" href="/style/site.webmanifest">
-</head>
-
-
+	<head>
+		<div id="head"> </div>
+		<script src="./assets/jquery-3.6.0.min.js"></script> 
+		<script>
+    		$(function(){
+				$("#head").load("./inc/head.html");
+				$("#nav").load("./inc/nav.html");
+				$("#footer").load("./inc/footer.html");
+    		});
+    	</script>
+	</head>
 <body>
-    <header>
-        <h1><a href="index.html">JACOB-WILLIS.COM</a></h1>
-    </header>
-    <p><a href="about.html">ABOUT</a> | <a href="learning.html">LEARNING</a> | <a href="notes.html">NOTES</a> | <a href="reading.html">READING LIST</a></p>
-    <p><br><br></p>
+    <div id="nav"> </div>
     <h2>Learning</h2>
     <p><a href="learning/cmmcv2.html">CMMCv2</a></p>
     <p><a href="learning/deconstructf-writeup.html">DeconstruCTF Writeup</a></p>
     <p><a href="learning/cloud.html">What is the cloud?</a></p>
     <p><a href="learning/cia-triad.html">The CIA Triad</a></p>
-<footer>
-    <h3>Contact Me</h3>
-    <p>
-        <a href="mailto:jacob@jacob-willis.com">Email</a> |
-        <a href="https://github.com/willisman31">GitHub</a> |
-        <a href="https://www.linkedin.com/in/jacobwillis22/">LinkedIn</a> |
-        <a href="https://twitter.com/jwillis414141">Twitter</a>
-    </p>
-</footer>
+	<div id="footer"> </div>
 </body>
-
-
 </html>
