@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jacob-willis.com/sitemap.xml
+Sitemap: https://blog.jacob-willis.com/sitemap.xml
