@@ -6,7 +6,7 @@ body {
             background-color: black;
 }
 
-p {
+.content {
     text-align: left;
 }
 
@@ -20,8 +20,24 @@ footer, header {
 
 a {
 	color: aqua;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 ul {
     text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: aqua;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

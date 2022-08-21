@@ -5,16 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DeconstruCTF Writeup</title>
         <link rel="stylesheet" href="../style/main.css"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/style/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/style/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/style/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../style/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../style/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../style/favicon-16x16.png">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQHKRLXSSQ"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-QQHKRLXSSQ');
+		</script>
 	</head>
 
 <body>
+    <div class="nav">
     <header>
-        <h1><a href="index.html">JACOB-WILLIS.COM</a></h1>
+        <h1><a href="../index.html">JACOB-WILLIS.COM</a></h1>
     </header>
-    <p><a href="about.html">ABOUT</a> | <a href="learning.html">LEARNING</a> | <a href="notes.html">NOTES</a> | <a href="reading.html">READING LIST</a></p>
+    <p><a href="../about.html">ABOUT</a> | <a href="../learning.html">LEARNING</a> | <a href="../notes.html">NOTES</a> | <a href="../reading.html">READING LIST</a></p>
+    </div>
+    <div class="content">
     <p><br><br></p>
 	<h2>DeconstruCTF Writeup</h2>
     <h3><strong>Intro</strong></h3>
@@ -22,13 +32,13 @@
     <br />
     <h3>Here's a Flag</h3>
     <p>This is the first challenge in the Web section.  It focused on understanding the front-end of a web application.  </p>
-    <img src="/style/heres_a_flag.png" alt="Screenshot of clue for first challenge">
+    <img src="../style/heres_a_flag.png" alt="Screenshot of clue for first challenge">
     <p>Above you can see the clue and the site where this flag is hidden.  The first step is to go to the site and see what I’m working with.</p>
-    <img src="/style/flag_page.png" alt="Screenshot of page with first flag">
+    <img src="../style/flag_page.png" alt="Screenshot of page with first flag">
     <p>In this case, the entire page is just this CSS-built flag.  The next step is to go into the CSS and take a quick look for clues.  </p>
-    <img src="/style/error_messages.png" alt="Error message relating to unknown properties- flag and caesar-cipher">
+    <img src="../style/error_messages.png" alt="Error message relating to unknown properties- flag and caesar-cipher">
     <p>Upon looking in the console, there are these two unknown properties.  Looking directly at the CSS text, the flag and caesar-cipher properties are pretty easy to find.</p>
-    <img src="/style/css_flag.png" alt="CSS code for flag and caesar-cipher">
+    <img src="../style/css_flag.png" alt="CSS code for flag and caesar-cipher">
     <p>Since this flag property looks nothing like CSS, it’s a safe bet to assume this is the answer to the challenge, but upon pasting the text into the answer box I am told that this answer is incorrect.  Looking back at the CSS, it’s now time to consider this caesar-cipher.  So I searched for a caesar-cipher decoder website so that I can find the answer faster than doing it by hand.  The shift I assume to be three, and even if there was no way to determine the shift the answer space is small enough to brute force.  </p>
     <p>The resulting string is accepted by the site (after a little fiddling with it) and that’s the first flag.</p>
     <br />
@@ -37,7 +47,8 @@
     <br />
     <h3>Next Steps</h3>
     <p>Most of the knowledge I leveraged for this CTF came from completing rooms on TryHackMe, so I plan to return to THM and keep solving rooms.  I also looked into a couple of the cryptography challenges and was completely overwhelmed, it’s clear that I need to do a lot more research before I’m able to even start on those.  </p>
-    <footer>
+    </div>
+    <footer class="foot">
         <h3>Contact Me</h3>
         <p>
             <a href="mailto:jacob@jacob-willis.com">Email</a> |
