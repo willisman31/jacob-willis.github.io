@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.jacob-willis.com/index.html</loc>
-    <lastmod>2022-1-4</lastmod>
+    <lastmod>2022-8-25</lastmod>
   </url>
   <url>
     <loc>https://blog.jacob-willis.com/about.html</loc>
@@ -27,5 +27,10 @@
   </url>
   <url>
     <loc>https://blog.jacob-willis.com/learning/cmmcv2.html</loc>
+    <lastmod>2022-8-25</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.jacob-willis.com/learning/what-is-agile.html</loc>
+    <lastmod>2022-8-20</lastmod>
   </url>
 </urlset>
