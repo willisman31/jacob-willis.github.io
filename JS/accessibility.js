@@ -20,3 +20,7 @@ function setDefaultMode() {
     document.getElementByTagName(a).style.color = "aqua";
 }
 
+function createAccessibilityWheel() {
+    document.getElementByClassName(accessibility).style.display = "block";
+    
+}
