@@ -1,3 +1,5 @@
+const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
 function setLightMode() {
     document.getElementByTagName(body).style.background = "black";
     document.getElementByTagName(body).style.color = "white";
@@ -20,7 +22,12 @@ function setDefaultMode() {
     document.getElementByTagName(a).style.color = "aqua";
 }
 
-function createAccessibilityWheel() {
-    document.getElementByClassName(accessibility).style.display = "block";
-    
+function setMobileMargins() {
+    document.getElementByClass(content).style.padding = "0px 5px 5px 0px";
 }
+
+function createAccessibilityWheel() {
+    document.getElementByClass(accessibility).style.display = "block";
+    document.getElementByClass(accessibility).style.align = "left";
+}
+
