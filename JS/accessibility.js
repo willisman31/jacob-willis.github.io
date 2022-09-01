@@ -1,16 +1,16 @@
 const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
 
-function setLightMode() {
+function setLightAppearance() {
     document.getElementByTagName(body).style.background = "black";
     document.getElementByTagName(body).style.color = "white";
 }
 
-function setDarkMode() {
+function setDarkAppearance() {
     document.getElementByTagName(body).style.background = "black";
     document.getElementByTagName(body).style.color = "white";
 }
 
-function setDefaultMode() {
+function setDefaultAppearance() {
     document.getElementByTagName(body).style.color = "black";
     document.getElementByClass(content).style.color = "chartreuse";
     document.getElementByTagName(h1).style.color = "aqua";
@@ -22,8 +22,14 @@ function setDefaultMode() {
     document.getElementByTagName(a).style.color = "aqua";
 }
 
+function increaseFontSize() {
+    
+}
+
 function setMobileMargins() {
-    document.getElementByClass(content).style.padding = "0px 5px 5px 0px";
+    if (isMobile) {
+        document.getElementByClass(content).style.padding = "0px 5px 5px 0px";
+    }
 }
 
 function createAccessibilityWheel() {
