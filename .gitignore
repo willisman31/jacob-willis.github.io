@@ -4,3 +4,5 @@
 *.jekyll-metadata
 *vendor*
 *.DS_Store
+Template.html
+
