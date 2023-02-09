@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Upload Vulnerabilities</title>
+	<link rel="stylesheet" href="../style/main.css"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="../style/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../style/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../style/favicon-16x16.png">
+	</head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQHKRLXSSQ"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-QQHKRLXSSQ');
+	</script>
+<body>
+	<div class="head">
+	<header>
+		<h1><a href="../index.html">JACOB-WILLIS.COM</a></h1>
+	</header>
+	<p><a href="../about.html">ABOUT</a> | <a href="../learning.html">LEARNING</a> | <a href="../notes.html">NOTES</a> | <a href="../reading.html">READING LIST</a></p>
+	</div>
+	<div class="content">
+	<p><br><br></p>
+    <h2>Upload Vulnerabilities</h2>
+    <p>Upload vulnerabilities are a gateway for attackers from a simple file upload to attack your systems with malicious files.  Cross site scripting, cross site request forgery, and remote code execution are just some of the attacks that can arise from an upload vulnerability; but what is an upload vulnerability exactly?  An upload vulnerability occurs when files are not properly handled by the server accepting user-uploaded files and thus allows malicious actors to trick the server into executing custom code.  A common example of this is a social media site that allows you to upload pictures, but doesn't properly validate the file type that has been uploaded, thus allowing attackers to upload a file containing malware instead.  In this article, I'll discuss some basic exploits for this vulnerability, some common-sense protections, and introduce my project to test for this class of vulnerability.</p>
+    <p>As stated above, upload vulnerabilities are instances of bad code being uploaded instead of the desired file type; this makes them a great place to start for beginners in cybersecurity learning about exploits- there is no shortage of bad code on the internet to borrow.  <a href="https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php">Here</a> is an example of a reverse shell written in PHP, this is the kind of program that one would want to upload when taking advantage of upload vulnerabilities- it opens up a channel for direct communication between the client and server shell.  With good administration, this shell would only be executable by the service account running the web server; however, more often than not, a pivot can be found that allows the attacker to escalate privileges once they've established a foothold for themself.  In any case, the code we've introduced is the easy part of the attack- the tough part for an attacker is getting it onto the server and executed while avoiding security measures.</p>
+	<p>Not every upload page will have any security at all- in this case, the tough part is manipulating the app into executing your payload; payload execution is typically achieved by simply navigating to the payload's new URL in the browser, more complex architectures may make it more difficult to execute your code but those are beyond the scope of this article.  With the basics of execution figured out, we can focus on the upload now.  There are two high-level types of protections: client-side filtering, and server-side filtering.  Client side filters are implemented in the user's browser and are much easier to skirt around for an attacker; turn off JavaScript in the browser, intercept and modify incoming or outgoing packets with Burp Suite, or use cURL or a similar tool to directly upload to the endpoint.  The server-side protections are much more effective- they tend to be difficult to enumerate and even more difficult to evade.  Extension validation, MIME validation, magic number validation, and filters based on file length, file name, and file content are all means of preventing malicious files from being accepted by the endpoint.  Extension validation will just check the end of the file name, like blocking any file that ends with .php.  MIME validation uses the packet headers to check what kind of content is being uploaded; magic number validation checks the hexadecimal encoding of the file to determine how the operating system is likely to interpret the file.  When these filters are layered on top of each other it gets very difficult to find a way through.</p>
+	<p>This has been a very brief and high level introduction to upload vulnerabilities; both <a href="https://portswigger.net/web-security/file-upload">Portswigger</a> and <a href="https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload">OWASP</a> have much better explanations than myself.  With the basics of upload vulnerabilities understood, I'd like to introduce a tool I've been building to test for these kinds of weaknesses called <a href="https://github.com/willisman31/Vuln-Uploader">Vuln-Uploader</a>; the source code is available on GitHub and is under active development.  Ideas and suggestions on this article and Vuln-Uploader are always welcome.</p>
+	SWAPSTATEMENT
+	</div>
+	<footer class="foot">
+		<h3>Contact Me</h3>
+		<p>
+			<a href="mailto:jacob@jacob-willis.com">Email</a> |
+			<a href="https://github.com/willisman31">GitHub</a> |
+			<a href="https://www.linkedin.com/in/jacobwillis22/">LinkedIn</a> |
+			<a href="https://twitter.com/jwillis414141">Twitter</a>
+		</p>
+	</footer>
+</body>
+
+
+</html>
+
